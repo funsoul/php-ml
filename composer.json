@@ -1,0 +1,6 @@
+{
+    "require": {
+        "php-ai/php-ml": "^0.5.0",
+        "jaeger/querylist": "^4.0"
+    }
+}
