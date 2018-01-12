@@ -21,10 +21,14 @@ for($i=0;$i<$total;$i++){
     $samples[] = [$i];
 }
 
+print_r($targets);
+echo chr(10);
 $regression = new LeastSquares();
 $regression->train($samples, $targets);
 
 $nextDay = $total+1;
 $nextDayHigh = $regression->predict([$nextDay]);
 
-print_r(round($nextDayHigh));
+echo 'next day : ';
+echo(round($nextDayHigh));
+echo chr(10);
